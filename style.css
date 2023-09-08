@@ -1,0 +1,453 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    scroll-behavior: smooth;
+}
+
+.main {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.bgcolor.scrolled {
+    backdrop-filter: blur(10px);
+    background-color: #111111c3;
+    transition: 0.5s ease-in;
+}
+
+.navbar {
+    border-bottom: 1px solid #dadada74;
+    height: 80px;
+}
+
+.navbar-light .navbar-nav .nav-item .nav-link {
+    color: #dadada;
+    margin: 0px 10px;
+}
+
+.navbar-light .navbar-nav .nav-item .nav-link:hover .navbar {
+    border-bottom: 3px solid #b42525;
+    transition: 0.1s ease-in all;
+}
+
+.navbar-light .navbar-brand {
+    color: #dadada;
+}
+
+.hero {
+    position: relative;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.hero {
+    background: rgba(0, 0, 0, 0.65) url('Hero.jpg');
+    background-blend-mode: darken;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.hero .cards {
+    position: absolute;
+    translate: -50% -50%;
+    bottom: -1%;
+    left: 50%;
+    width: 100%;
+}
+
+.hero .cards .media {
+    border-bottom: 1px solid #dadada;
+    padding: 0px 20px;
+}
+
+.hero .cards .media:hover {
+    border-bottom: 1px solid #b42525;
+    transition: 0.2s ease-in all;
+}
+
+.hero .cards .media .fa-map-location-dot {
+    font-size: 1.3vw;
+}
+
+.hero .cards .media .fa-map-location-dot {
+    color: #dadada97;
+}
+
+.hero .cards .media:hover .fa-map-location-dot {
+    color: #b42525;
+    transition: 0.2s ease-out all;
+}
+
+.hero .cards .media:hover p {
+    color: #dadada;
+    cursor: pointer;
+    transition: 0.2s ease-in all;
+}
+
+.hero .cards .media:hover h2 {
+    color: #dadada;
+    margin-left: 2px;
+    transition: 0.3s ease-in all;
+}
+
+.hero .cards p {
+    width: 100%;
+    font-size: 14px;
+    color: #dadada97;
+}
+
+.hero .cards h2 {
+    width: 100%;
+    font-weight: 600;
+    color: #dadada97;
+}
+
+.hero h1 {
+    font-size: 6.3vw;
+    font-weight: 700;
+}
+
+.hero .hero-1 p {
+    width: 60%;
+}
+
+.hero p {
+    font-weight: 400;
+}
+
+.tour {
+    position: relative;
+    height: auto;
+    background-color: rgb(10, 10, 10);
+    padding: 100px 0px;
+}
+
+.tour .image {
+    width: 100%;
+    height: 100%;
+}
+
+.tour .image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    border: 1px solid #dadada;
+    transition: 0.2s ease-in all;
+    opacity: .7;
+}
+
+.tour .image img:hover {
+    cursor: pointer;
+    scale: 1.025;
+    opacity: 1;
+}
+
+.tour .image img:hover h1 {
+    display: none;
+}
+
+.tour .img-cnt {
+    position: absolute;
+    translate: -50% -50%;
+    bottom: 10%;
+    left: 17.5%;
+}
+
+.tour .img-cnt-2 {
+    position: absolute;
+    translate: -50% -50%;
+    bottom: 10%;
+    left: 39.5%;
+}
+
+.tour .img-cnt-3 {
+    position: absolute;
+    translate: -50% -50%;
+    bottom: 10%;
+    left: 61%;
+}
+
+.tour .img-cnt-4 {
+    position: absolute;
+    translate: -50% -50%;
+    bottom: 10%;
+    left: 83%;
+}
+
+.video {
+    position: relative;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.video {
+    background: rgba(0, 0, 0, 0.6) url('About.jpg');
+    background-blend-mode: darken;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.video h1 {
+    font-weight: 600;
+    font-size: 3vw;
+}
+
+.video .icons {
+    position: absolute;
+    translate: -50% -50%;
+    left: 50%;
+    bottom: 1%;
+}
+
+.video .icons i {
+    font-size: 2.3vw;
+    color: #dadada;
+    margin: 0px 25px;
+}
+
+.video iframe {
+    width: 100%;
+    height: auto;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+@media (max-width:1024px) {
+    .tour {
+        position: relative;
+    }
+
+    .tour h2 {
+        font-size: 2.5vw;
+    }
+
+    .tour p {
+        font-size: 1.3vw;
+    }
+
+    .tour .img-cnt {
+        position: absolute;
+        translate: -50% -50%;
+        bottom: 10%;
+        left: 15%;
+    }
+
+    .tour .img-cnt-2 {
+        position: absolute;
+        translate: -50% -50%;
+        bottom: 10%;
+        left: 38%;
+    }
+
+    .tour .img-cnt-3 {
+        position: absolute;
+        translate: -50% -50%;
+        bottom: 10%;
+        left: 61.5%;
+    }
+
+    .tour .img-cnt-4 {
+        position: absolute;
+        translate: -50% -50%;
+        bottom: 6%;
+        left: 85%;
+    }
+
+}
+
+@media (max-width:768px) {
+    .hero .hero-1 p {
+        width: 100%;
+        font-size: 1.5vw;
+    }
+
+    .hero p {
+        font-weight: 400;
+        font-size: 1.5vw;
+    }
+
+    .hero .cards p {
+        width: 100%;
+        font-size: 12px;
+        color: #dadada97;
+    }
+
+    .hero .cards h2 {
+        font-size: .9rem !important;
+    }
+
+    .tour .img-cnt {
+        position: absolute;
+        translate: -50% -50%;
+        bottom: 11%;
+        left: 15%;
+    }
+
+    .tour .img-cnt-2 {
+        position: absolute;
+        translate: -50% -50%;
+        bottom: 11%;
+        left: 38%;
+    }
+
+    .tour .img-cnt-3 {
+        position: absolute;
+        translate: -50% -50%;
+        bottom: 11%;
+        left: 61.5%;
+    }
+
+    .tour .img-cnt-4 {
+        position: absolute;
+        translate: -50% -50%;
+        bottom: 7.3%;
+        left: 85%;
+    }
+}
+
+@media (max-width:600px) {
+
+    .navbar-light .navbar-toggler {
+        color: rgba(255, 255, 255, .55);
+        border-color: #dadada;
+    }
+
+    .fa-magnifying-glass{
+        margin: 0px 10px;
+    }
+    
+    .navbar-toggler:focus {
+        text-decoration: none;
+        outline-color: none;
+    }
+
+    .navbar {
+        height: auto;
+    }
+
+    .hero h1 {
+        text-align: center;
+        font-size: 12vw;
+    }
+
+    .hero p {
+        font-size: 3.5vw !important;
+        text-align: center;
+    }
+
+    .hero .hero-carousel {
+        display: none;
+    }
+
+    .hero .cards .media {
+        padding: 0 2.5px;
+    }
+
+    .hero .cards {
+        left: 50%;
+    }
+
+    .hero .cards p {
+        font-size: 10px !important;
+        text-align: left;
+    }
+
+    .hero .cards .media .fa-map-location-dot {
+        font-size: 2.5vw !important;
+    }
+
+    .hero .cards h2 {
+        font-size: .6rem !important;
+    }
+
+    .ms-3 {
+        margin-left: 0.5rem !important;
+    }
+
+    .tour .image img {
+        object-fit: cover;
+        object-position: center;
+        width: 100%;
+        height: 80%;
+        border-radius: 5px;
+        border: 1px solid #dadada;
+        transition: 0.2s ease-in all;
+        opacity: .7;
+    }
+
+    .tour .img-cnt {
+        position: absolute;
+        translate: -50% -50%;
+        top: 48%;
+        left: 50%;
+    }
+    .tour .img-cnt-2 {
+        position: absolute;
+        translate: -50% -50%;
+        top: 63%;
+        left: 50%;
+    }
+    .tour .img-cnt-3 {
+        position: absolute;
+        translate: -50% -50%;
+        top: 76.3%;
+        left: 50%;
+    }
+    .tour .img-cnt-4 {
+        position: absolute;
+        translate: -50% -50%;
+        top: 92.5%;
+        left: 50%;
+    }
+    .tour h2 {
+        font-size: 8.5vw;
+    }
+
+    .tour p {
+        font-size: 3vw;
+    }
+
+    .video{
+        text-align: center;
+    }
+
+    .video a>p{
+        text-align: center;
+    }
+
+    .video h1{
+        font-size: 5vw;
+    }
+    .video p{
+        font-size: 3vw;
+        text-align: justify;
+    }
+
+    .video .fa-circle-play{
+        font-size: 3.5vw !important;
+    }
+    .video .icons i {
+        font-size: 6vw !important;
+        color: #dadada;
+        margin: 0px 25px;
+    }
+}
